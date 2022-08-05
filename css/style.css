@@ -39,13 +39,17 @@ main {
     font-weight: 600;
     color: #aaa;
     top: 55%;
-    right: 39%;
+    right: 27%;
     font-size: clamp(8px, 5vw, 25px);
 }
 
 .pokemon_name {
     color: #3a444d;
     text-transform: capitalize;
+    font-family: 'Oxanium', cursive;
+}
+
+.pokemon_number {
     font-family: 'Oxanium', cursive;
 }
 
@@ -66,5 +70,31 @@ main {
     font-weight: 600;
     font-size: clamp(8px, 5vw, 1rem);
     box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-55%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(5px, 5vw, 1rem);
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #000;
+    font-size: 0.9rem;
 }
 
